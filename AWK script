@@ -1,0 +1,21 @@
+$1 !~ /^##/{
+  if($1 ~/^#CHROM/){
+     mystr="chrpos" 
+     for(i=10; i<=NF; i++){
+        mystr=mystr"\t"$i;
+}
+print mystr;
+} else {
+chr = "chr"$1; pos=$2; ref=$4; alt=$5; format=$9;
+mystr=chr"_"pos"_"ref"_"alt;
+n = split(format, f, ":");
+ for(j=1; j<=n; j++){if(f[j] == "GT") gt = j; if(f[j] == "FREQ") freq = j;}
+ for(j=10; j<=NF; j++){n=split($j, v, ":"); vaf="NA";
+    if(v[gt] != "./.") {
+     vaf=v[freq]; gsub("%", "", vaf);
+}
+mystr=mystr"\t"vaf;
+  }
+print mystr;
+}
+}
