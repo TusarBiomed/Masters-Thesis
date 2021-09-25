@@ -1,2 +1,2 @@
 # Masters-Thesis
-All R scripts of the master thesis are available here.
+All scripts of the master thesis are available here.
