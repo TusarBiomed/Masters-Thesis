@@ -47,7 +47,8 @@ tmp <- raw_data_tmp2 %>% filter(chrpos %in% newGs2$chrpos) %>% as.data.frame()
 
 tmp <- tmp %>% pivot_longer(cols = starts_with("Sample"))
 # Set the variable 'in_68genes' 
-tmp1 <- tmp %>% group_by(name) %>% summarize(syncount = sum(value, na.rm = T)) %>% mutate(in_68genes = ifelse(syncount > 0, 1, 0), sample_id = gsub('_AML.realign.bam', '', gsub('Sample_', '', name)))
+tmp1 <- tmp %>% group_by(name) %>% summarize(syncount = sum(value, na.rm = T)) %>% mutate(in_68genes = ifelse(syncount > 0, 1, 0), 
+                                                                                          sample_id = gsub('_AML.realign.bam', '', gsub('Sample_', '', name)))
 
 
 ## Only to save the data.
@@ -86,7 +87,12 @@ data <- data %>% mutate(
 data <- data %>% select(-syncount)
 
 ## New 'syncount' variable-
-data_tmp <- data %>% select(grep('^chr', names(data), value = T)) %>% summarize(syncount = rowSums(. > 0, na.rm = T), syndosage = rowSums(., na.rm = T)) %>% mutate(syncount_binary = ifelse(syncount > 0, 1, 0)) %>% select(syncount, syncount_binary, syndosage)
+data_tmp <- data %>% select(grep('^chr', names(data),
+                                 value = T)) %>% summarize(syncount = rowSums(. > 0, na.rm = T),
+                                                                                syndosage = rowSums(.,
+                                                                                                    na.rm = T))%>% mutate(syncount_binary = ifelse(syncount > 0, 1,
+                                                                                                                                                   0))%>% select(syncount,
+                                                                                                                                                   syncount_binary, syndosage)
 
 data <- cbind(data, data_tmp)
 
