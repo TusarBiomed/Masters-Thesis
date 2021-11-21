@@ -1,2 +1,2 @@
 # Masters-Thesis
-All scripts of the master thesis are available here.
+All scripts of my master thesis are available here.
