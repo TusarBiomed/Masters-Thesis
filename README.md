@@ -17,7 +17,7 @@ This repository includes:
 - **AWK scripts** for text processing and variant filtering
 - Supplementary analysis pipelines used for variant annotation, filtering, and survival modeling
 
-- ## 🔬 Methods Overview
+## 🔬 Methods Overview
 1. **Data Source**: Beat AML cohort (175 patients after filtering)
 2. **Variant Calling**: VarScan2
 3. **Annotation**: ANNOVAR, SynMICdb, CIVIC
@@ -40,9 +40,9 @@ This repository includes:
 - **Databases**: SynMICdb, CIVIC, COSMIC, dbNSFP, 1000 Genomes
 
 
-💬 Discussion & Interpretation:
+## 💬 Discussion & Interpretation:
 
-🧬 Key Findings
+## 🧬 Key Findings
 Asymmetric Distribution: Synonymous mutations were not evenly distributed across gene regions, suggesting functional or structural constraints in mutation tolerance.
 
 Impact on Treatment Response: Higher synonymous mutation burden was associated with significantly lower Complete Remission rates (OR ≈ 0.60, p ≈ 0.04), especially when stratified by ELN 2017 classification.
@@ -57,7 +57,7 @@ U2AF2 – RNA splicing machinery
 
 FLT3 – tyrosine kinase signaling
 
-⚙️ Potential Mechanisms
+## ⚙️ Potential Mechanisms
 Although “silent” at the protein level, synonymous mutations may influence:
 
 ✅ Splicing regulation (exon skipping, splice site disruption)
@@ -72,7 +72,7 @@ For example:
 
 The NOTCH1 mutation chr9:139395259 is located in an ankyrin repeat domain near known phosphorylation sites, which could alter protein interactions or stability.
 
-⚠️ Limitations
+## ⚠️ Limitations
 Small cohort size limits statistical power.
 
 No independent validation cohort available.
@@ -81,7 +81,7 @@ Functional validation (e.g., splicing assays) was not performed.
 
 Rare variant frequency restricted in-depth per-mutation analysis.
 
-🚀 Future Directions
+## 🚀 Future Directions
 🔬 Larger multi-omics cohorts with RNA-seq to assess splicing impacts.
 
 🧪 Functional studies using minigene reporters or CRISPR editing.
@@ -90,6 +90,6 @@ Rare variant frequency restricted in-depth per-mutation analysis.
 
 🏥 Clinical translation into risk stratification tools.
 
-✅ Conclusion
+## ✅ Conclusion
 This study suggests that synonymous mutations are not biologically silent in AML and may collectively influence therapeutic response. Their inclusion in genomic profiling could refine risk prediction and personalize treatment strategies in AML precision oncology.
 
