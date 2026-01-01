@@ -15,7 +15,6 @@ The study investigates the role of synonymous mutations in 68 recurrently mutate
 This repository includes:
 - **R scripts** for statistical analysis, visualization, and data processing
 - **AWK scripts** for text processing and variant filtering
-- Supplementary analysis pipelines used for variant annotation, filtering, and survival modeling
 
 ## 🔬 Methods Overview
 1. **Data Source**: Beat AML cohort (175 patients after filtering)
