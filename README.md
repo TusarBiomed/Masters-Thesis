@@ -40,16 +40,56 @@ This repository includes:
 - **Databases**: SynMICdb, CIVIC, COSMIC, dbNSFP, 1000 Genomes
 
 
-Key Findings and Interpretation:
-Our exploratory analysis revealed that synonymous mutations in recurrently mutated AML genes are not uniformly distributed across protein sequences, suggesting potential functional constraints or region-specific mutational pressures. While individual synonymous mutations did not significantly impact overall survival, the collective burden of such mutations was significantly associated with reduced likelihood of complete remission, particularly when stratified by ELN 2017 risk classification. This indicates that synonymous mutations may exert a cumulative biological effect, possibly through mechanisms such as altered mRNA splicing, stability, or translational efficiency, which collectively influence therapeutic response.
+💬 Discussion & Interpretation:
 
-Biological and Clinical Implications:
-The presence of synonymous mutation clusters in genes such as NOTCH1 and U2AF2 — both implicated in splicing regulation and leukemogenesis — underscores the potential role of “silent” mutations in RNA processing and protein function. For instance, the recurrent synonymous mutation in NOTCH1 (chr9:139395259) lies within an ankyrin repeat domain near known post-translational modification sites, suggesting possible effects on protein interaction or stability. Similarly, mutations in U2AF2 within RNA recognition motifs may influence spliceosome assembly and fidelity. These findings align with growing evidence that synonymous mutations can modulate gene expression and protein conformation, thereby contributing to disease phenotype and therapy resistance.
+🧬 Key Findings
+Asymmetric Distribution: Synonymous mutations were not evenly distributed across gene regions, suggesting functional or structural constraints in mutation tolerance.
 
-Study Limitations and Future Directions:
-The primary limitations of this study include its modest sample size, lack of validation cohort, and the rarity of individual synonymous mutations, which constrained robust statistical modeling. Future studies should prioritize larger, multi-center cohorts with matched RNA-seq data to directly assess the impact of synonymous mutations on splicing patterns, transcript stability, and protein expression. Functional assays, such as minigene splicing reporters or CRISPR-based mutagenesis, would be valuable to validate the mechanistic effects of prioritized mutations. Additionally, integrating synonymous mutation profiles with transcriptomic and proteomic datasets may uncover novel biomarkers for risk stratification or therapeutic targeting in AML.
+Impact on Treatment Response: Higher synonymous mutation burden was associated with significantly lower Complete Remission rates (OR ≈ 0.60, p ≈ 0.04), especially when stratified by ELN 2017 classification.
 
-Conclusion:
-In conclusion, while synonymous mutations have historically been overlooked in AML pathogenesis, our findings suggest they may collectively influence disease biology and treatment response. This study provides a foundational framework for further investigation into the functional relevance of synonymous mutations in AML and highlights the importance of incorporating non-coding and silent variants into comprehensive genomic profiling for precision oncology.
+No Survival Link: No significant association was found with Overall Survival, indicating that synonymous mutations may affect early treatment response rather than long-term survival.
 
+Mutation Hotspots: Clusters were identified in key genes like:
+
+NOTCH1 – signaling and differentiation
+
+U2AF2 – RNA splicing machinery
+
+FLT3 – tyrosine kinase signaling
+
+⚙️ Potential Mechanisms
+Although “silent” at the protein level, synonymous mutations may influence:
+
+✅ Splicing regulation (exon skipping, splice site disruption)
+
+✅ mRNA stability and translational kinetics
+
+✅ Cotranslational folding and post-translational modification sites
+
+✅ Non-coding RNA binding (e.g., miRNA targeting)
+
+For example:
+
+The NOTCH1 mutation chr9:139395259 is located in an ankyrin repeat domain near known phosphorylation sites, which could alter protein interactions or stability.
+
+⚠️ Limitations
+Small cohort size limits statistical power.
+
+No independent validation cohort available.
+
+Functional validation (e.g., splicing assays) was not performed.
+
+Rare variant frequency restricted in-depth per-mutation analysis.
+
+🚀 Future Directions
+🔬 Larger multi-omics cohorts with RNA-seq to assess splicing impacts.
+
+🧪 Functional studies using minigene reporters or CRISPR editing.
+
+📊 Integration with proteomic data to assess protein-level effects.
+
+🏥 Clinical translation into risk stratification tools.
+
+✅ Conclusion
+This study suggests that synonymous mutations are not biologically silent in AML and may collectively influence therapeutic response. Their inclusion in genomic profiling could refine risk prediction and personalize treatment strategies in AML precision oncology.
 
